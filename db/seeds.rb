@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Note.create(title: "Notes!", content: 'A note app! Try it out!', deleted: false, liked: true)
+Note.create(title: "CRUDdy app!", content: 'Enjoy that you can delete your mistakes and change your mind too!' )
+Note.create(title: "Redux!", content: 'Is awesome!', liked: true)
+Note.create(title: "Thin", content: "It's pretty simple!")
+Note.create(title: "Stylin", content: "But it's got some styling!")
+Note.create(title: "Loading", content: "It's got a little loading page you might see!")
+Note.create(title: "Confirmations", content: "And when you delete or update a note, you'll know it!")
+Note.create(title: "Trash test", content:"Deleted is true by default", deleted: true)
+
+User.create! :email => 'michaelrburak@gmail.com', :password => 'michaelburak'
+User.create! :email => 'admin@gmail.com', :password => 'administrator', :admin => true 
+User.create! :email => 'dummy@test.com', :password => 'dummydummy'
